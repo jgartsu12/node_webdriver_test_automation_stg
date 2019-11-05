@@ -16,4 +16,11 @@ describe("challenge1 suite", function(){
     after (function () {
         return driver.quit();
     });
+
+    it("The title is 'Google'", function(){
+        // want title page ... need to manually handle the Promise
+        return driver.getTitle().then(function(title){
+            assert.equal(title, "Google");
+        });
+    });
 });
