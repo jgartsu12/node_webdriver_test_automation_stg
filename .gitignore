@@ -6,3 +6,5 @@ yarn-error.log
 # project
 dist/
 env.js
+
+test_automation_station.code-workspace/
