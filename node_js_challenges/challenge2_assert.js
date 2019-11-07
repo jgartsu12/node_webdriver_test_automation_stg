@@ -1,15 +1,15 @@
 // use hard assertion 
-require('chromedriver');
-var webdriver = require('selenium-webdriver');
-var assert = require("chai").assert;
+import 'chromedriver';
+import { Builder, Capabilities } from 'selenium-webdriver';
+import { assert } from "chai";
 
 describe("challenge2 suite", function(){
    this.timeout(20000);
    var driver;
    before(function () {
        // initializing chrome driver
-       driver = new webdriver.Builder()
-       .withCapabilities(webdriver.Capabilities.chrome())
+       driver = new Builder()
+       .withCapabilities(Capabilities.chrome())
        .build();
    });
 

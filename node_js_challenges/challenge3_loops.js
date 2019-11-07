@@ -12,4 +12,5 @@ describe("challenge2 suite", function(){
        .build();
    });
 
-let popularItems = [];
+let popularItems = {[];
+}
