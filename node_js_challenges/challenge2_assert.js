@@ -7,7 +7,6 @@ describe("challenge2 suite", function(){
    this.timeout(20000);
    var driver;
    before(function () {
-       // initializing chrome driver
        driver = new Builder()
        .withCapabilities(Capabilities.chrome())
        .build();
